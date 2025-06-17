@@ -1,0 +1,46 @@
+.memo-container {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.memo-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+.memo-table-wrapper {
+  overflow-x: auto;
+}
+
+.memo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.memo-table th,
+.memo-table td {
+  padding: 12px 16px;
+  text-align: left;
+  background-color: rgba(30, 144, 255, 0.9);
+  color: white;
+  border: 1px solid white;
+}
+
+.memo-table th {
+  background-color: #1565c0;
+}
+
+.memo-table tr:hover {
+  background-color: rgba(30, 144, 255, 0.6);
+  transition: background 0.3s ease;
+}
