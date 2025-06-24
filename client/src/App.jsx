@@ -11,15 +11,13 @@ function App() {
     signer:null,
     contract:null
   })
-  const [account,setAccount]=useState('Not connected');
+  const [account,setAccount]=useState( "Currently No Account is Connected");
   useEffect(()=>{
     const template=async()=>{
    
       const contractAddres="0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
       const contractABI=abi.abi;
       //Metamask part
-      //1. In order do transactions on goerli testnet
-      //2. Metmask consists of infura api which actually help in connectig to the blockhain
       try{
 
         const {ethereum}=window;
@@ -50,16 +48,10 @@ function App() {
   },[])
   return (
     <div>
-  <h1 style={{ fontSize: "3.5rem", fontWeight: "bolder", color: "#fff", textAlign: "center" }}>
-    FMC Weekend Fund Raiser - NOW LIVE !!
-  </h1>
-<p className="connected-account">
-         <span>Connected Account — {account}</span>
-        </p>
-
-
-  <Buy state={state} />
+      
+  <Buy state={state}  account={account} />
   <Memos state={state} />
+ 
   </div>
   )
 }

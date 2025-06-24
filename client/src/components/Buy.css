@@ -4,7 +4,47 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Sansita Swashed", cursive;
-  background: url("/img.png") no-repeat center center fixed;
+  background: #47c291be; 
+  background-size: cover;
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  background-color: #00000059;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 2px solid #ccc; /* optional */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optional */
+}
+
+.header-strip {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-strip img {
+  max-height: 250px;     /* adjust as needed */
+  width: auto;
+  object-fit: contain;
+}
+page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: white; /* fallback color */
+}
+
+.header-banner {
+  width: 100%;
+  height: 200px; /* adjust height of header */
+  background: url('/img.png') no-repeat center center;
   background-size: cover;
 }
 
