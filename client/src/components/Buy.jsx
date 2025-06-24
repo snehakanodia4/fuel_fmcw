@@ -42,7 +42,7 @@ const Buy = ({ state, account })  => {
               </div>
 
             <div className="header-strip">
-              <img src="/img.png" alt="Header Banner" />
+              <img src="img.png" alt="Header Banner" />
             </div>
      <div className="center">
         <h1>Cheers from the Community </h1>
