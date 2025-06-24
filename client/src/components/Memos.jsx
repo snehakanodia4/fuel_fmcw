@@ -15,7 +15,7 @@ const Memos = ({ state }) => {
 
   return (
     <div className="memo-container">
-      <h3 className="memo-title">Support So Far 💙</h3>
+      <h3 className="memo-title">Support So Far 💚</h3>
       <div className="memo-table-wrapper">
         <table className="memo-table">
           <thead>
